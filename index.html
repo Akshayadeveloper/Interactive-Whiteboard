@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Whiteboard</title>
+   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css">
+</head>
+<body>
+  <center>
+  <div class="container">
+    <h1 class="text-center">Interactive Whiteboard</h1>
+    <canvas id="whiteboard" width="800" height="400"></canvas>
+    <div class="controls">
+      <button class="clear"/*class="btn btn-primary"*/ onclick="clearCanvas()">Clear</button>
+      <button class="btn btn-secondary ml-2 toggle" onclick="toggleCanvas()">Toggle Drawing</button>
+      <div class="btn-group ml-2">
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Color Palette
+        </button>-->
+        <div class="dropdown-menu">
+          <div class="color-palette">
+            <div class="color-option" style="background-color: #000" onclick="applyColor('#000')"></div>
+            <div class="color-option" style="background-color: #ff0000" onclick="applyColor('#ff0000')"></div>
+            <div class="color-option" style="background-color: #00ff00" onclick="applyColor('#00ff00')"></div>
+            <div class="color-option" style="background-color: #0000ff" onclick="applyColor('#0000ff')"></div>
+          </div>
+        </div>
+      </div>
+      <input type="text" id="color-picker" />
+      <div class="form-group">
+        <label for="brushWidth">Brush Width:</label>
+        <input type="number" id="brushWidth" class="form-control" value="5" min="1" max="20" onchange="changeWidth(this.value)">
+      </div>
+    </div>
+     <p></p>  <footer><p>&#128159;Powered by <a href="https://github.com/Akshayadeveloper"target="_blank">Akshaya developer</a></p>
+</footer></center> 
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+<script src="./script.js">
+ </script>
+</body>
+</html>
