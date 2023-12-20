@@ -1,0 +1,56 @@
+/* styles.css */
+@import url( 
+"https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); 
+* { 
+	box-sizing: border-box; 
+	margin: 0; 
+	padding: 0; 
+}
+    body {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    canvas {
+      border: 2px solid #000;
+      margin-top: 20px;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .btn-group {
+      margin-right: 10px;
+    }
+    .color-palette {
+      display: flex;
+    }
+    .color-option {
+      width: 30px;
+      height: 30px;
+      margin: 2px;
+      cursor: pointer;
+    }
+    #color-picker {
+      width: 180px;
+      margin-right: 10px;
+    }
+  h1{
+    background-image:url("http://www.zingerbugimages.com/backgrounds/rainbow_starry_sky_glitter_background_seamless.gif");
+    color:#fff;
+  }
+ .clear{
+   background: -webkit-linear-gradient(#5468ff, #ace0f9);
+   color:#fff;
+ /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+ }
+  .toggle{
+    background-image:url("http://www.zingerbugimages.com/backgrounds/pink_and_purple_lights_seamless_texture.jpg");
+  }
+  
